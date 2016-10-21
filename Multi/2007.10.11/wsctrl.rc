@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "WSCtrl.manifest"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHUTDOWN DIALOGEX 0, 0, 300, 200
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Automatyczne zamykanie systemu"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Nie zamykaj",IDC_DONOTSHUTDOWN,228,180,65,14
+    ICON            2,IDC_STATIC,13,15,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,45,50,247,1
+    LTEXT           "Przeczytaj uwa¿nie komunikat poni¿ej. W razie braku reakcji z Twojej strony, po up³ywie 3 minut system zostanie wy³¹czony.",IDC_STATIC,50,28,240,16
+    LTEXT           "System zosta³ skonfigurowany tak, aby o okreœlonej porze dnia komputer zosta³ automatycznie wy³¹czony. Jeœli jednak pracujesz jeszcze na tym komputerze, mo¿esz anulowaæ wy³¹czanie poprzez wybór odpowiedniej opcji poni¿ej. ",IDC_STATIC,50,60,235,32
+    LTEXT           "PAMIÊTAJ, aby na bie¿¹co zapisywaæ swoje dane! Automatyczne zamykanie systemu, bezwarunkowo zakoñczy dzia³anie wszystkich uruchomionych programów.",IDC_STATIC,50,120,240,24
+    LTEXT           "Wy³¹cz komputer za:",IDC_STATIC,50,100,68,8
+    LTEXT           "System zostanie automatycznie wy³¹czony za:",IDC_STATIC,50,155,150,8
+    LTEXT           "3:00 min.",IDC_COUNTER,202,155,45,8
+    COMBOBOX        IDC_TIMELIST,125,97,160,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Zamknij system",IDC_SHUTDOWN,158,180,65,14
+    LTEXT           "Rozpoczêto automatyczne zamykanie systemu",IDC_TITLE,50,13,240,10
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,50,165,243,8
+END
+
+IDD_INFO DIALOGEX 0, 0, 260, 100
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Informacja..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,203,79,50,14
+    LTEXT           "Anulowano automatyczne zamykanie systemu",IDC_TITLE,50,11,203,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,45,30,208,1
+    LTEXT           "Operacja automatycznego wy³¹czania komputera zosta³a wstrzymana. System bêdzie próbowa³ automatycznie zamkn¹æ komputer za 30 min.",IDC_STATIC,50,38,203,32
+    ICON            3,IDC_STATIC,13,15,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+1                       ICON                    "wsctrl.ico"
+2                       ICON                    "warning.ico"
+3                       ICON                    "info.ico"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+4 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)\r\n"
+    "LANGUAGE LANG_POLISH, SUBLANG_DEFAULT\r\n"
+    "#pragma code_page(1250)\r\n"
+    "#include ""VersionInfo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,45 @@
+//
+// VersionInfo.rc2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,470,7459
+ PRODUCTVERSION 1,0,470,7459
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041504E2"
+        BEGIN
+            VALUE "FileDescription", "Modu³ zdalnego administrowania"
+            VALUE "FileVersion", "1.0.470.7459"
+            VALUE "InternalName", "WSCTRL"
+            VALUE "LegalCopyright", "Copyright (C) 2005 Marek Sienczak"
+            VALUE "OriginalFilename", "WSCTRL.EXE"
+            VALUE "ProductName", "Modu³ zdalnego administrowania"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x415, 1250
+    END
+END
+/////////////////////////////////////////////////////////////////////////////
